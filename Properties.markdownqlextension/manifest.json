@@ -1,0 +1,104 @@
+{
+  "manifest" : {
+    "allowedNetworkOrigins" : [
+
+    ],
+    "apiVersion" : {
+      "major" : 2,
+      "minor" : 0,
+      "preview" : 2
+    },
+    "contributions" : [
+      {
+        "configuration" : {
+          "adapter" : "declarative-content",
+          "contentOwner" : "extension-runtime",
+          "order" : "20",
+          "privacy" : "document-content",
+          "scope" : "document",
+          "slot" : "document.pinned-summary.section",
+          "systemImage" : "list.bullet.rectangle",
+          "title" : "Properties"
+        },
+        "id" : "properties.pinned-summary",
+        "kind" : "surface",
+        "requiredGrants" : [
+          "surface.register",
+          "document.properties.read",
+          "document.properties.mutate"
+        ]
+      },
+      {
+        "configuration" : {
+          "adapter" : "declarative-content",
+          "contentOwner" : "extension-runtime",
+          "order" : "130",
+          "privacy" : "workspace-metadata",
+          "scope" : "workspace",
+          "slot" : "workspace.home.section",
+          "systemImage" : "tablecells",
+          "title" : "Properties"
+        },
+        "id" : "properties.workspace-home",
+        "kind" : "surface",
+        "requiredGrants" : [
+          "workspace.properties.read",
+          "surface.register",
+          "workspace.properties.navigate"
+        ]
+      },
+      {
+        "configuration" : {
+          "adapter" : "declarative-content",
+          "availability" : "workspace-optional",
+          "contentOwner" : "extension-runtime",
+          "initialRoute" : "properties",
+          "order" : "130",
+          "privacy" : "workspace-metadata",
+          "scope" : "workspace",
+          "slot" : "workspace.main.surface",
+          "systemImage" : "tablecells",
+          "title" : "Property Collection"
+        },
+        "id" : "properties.collection",
+        "kind" : "surface",
+        "requiredGrants" : [
+          "surface.register",
+          "workspace.properties.navigate",
+          "workspace.properties.read"
+        ]
+      }
+    ],
+    "entryPoint" : "Sources/main.js",
+    "hostWarmupRequirements" : [
+      {
+        "kind" : "workspace-index",
+        "timing" : "startup-background"
+      }
+    ],
+    "id" : "com.markdownql.properties",
+    "license" : "MIT",
+    "minimumAppVersion" : "5.0.0",
+    "name" : "Properties",
+    "publisher" : "MarkdownQL",
+    "requestedGrants" : [
+      "document.properties.read",
+      "workspace.properties.read",
+      "surface.register",
+      "document.properties.mutate",
+      "workspace.properties.navigate"
+    ],
+    "runtime" : "javascript",
+    "runtimeActivationPolicy" : "first-visible",
+    "version" : "1.0.1"
+  },
+  "modulePaths" : [
+    "Sources/main.js"
+  ],
+  "resourcePaths" : [
+    "CHANGELOG.md",
+    "Evolution/change.json",
+    "Evolution/replay.json",
+    "Tests/transcripts.json"
+  ]
+}

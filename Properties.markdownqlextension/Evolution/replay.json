@@ -1,0 +1,149 @@
+{
+  "events" : [
+    {
+      "correlationID" : "properties-positive",
+      "kind" : "host.request",
+      "sequence" : 1,
+      "value" : {
+        "category" : "positive",
+        "contributionID" : "properties.pinned-summary",
+        "operation" : "surface.render",
+        "request" : {
+          "route" : "default",
+          "windowHandle" : "window-1"
+        },
+        "requiredGrant" : "surface.register"
+      }
+    },
+    {
+      "correlationID" : "properties-positive",
+      "kind" : "extension.response",
+      "sequence" : 2,
+      "value" : {
+        "outcome" : "success",
+        "value" : {
+          "type" : "page"
+        }
+      }
+    },
+    {
+      "correlationID" : "properties-permission-denied",
+      "kind" : "host.request",
+      "sequence" : 3,
+      "value" : {
+        "category" : "permission-denied",
+        "contributionID" : "properties.pinned-summary",
+        "operation" : "surface.render",
+        "request" : {
+
+        },
+        "requiredGrant" : "surface.register"
+      }
+    },
+    {
+      "correlationID" : "properties-permission-denied",
+      "kind" : "extension.response",
+      "sequence" : 4,
+      "value" : {
+        "failureCode" : "permission-denied",
+        "outcome" : "failure"
+      }
+    },
+    {
+      "correlationID" : "properties-timeout",
+      "kind" : "host.request",
+      "sequence" : 5,
+      "value" : {
+        "category" : "timeout",
+        "contributionID" : "properties.pinned-summary",
+        "operation" : "surface.render",
+        "request" : {
+          "fixture" : "suspend"
+        }
+      }
+    },
+    {
+      "correlationID" : "properties-timeout",
+      "kind" : "extension.response",
+      "sequence" : 6,
+      "value" : {
+        "failureCode" : "timed-out",
+        "outcome" : "failure"
+      }
+    },
+    {
+      "correlationID" : "properties-cancelled",
+      "kind" : "host.request",
+      "sequence" : 7,
+      "value" : {
+        "category" : "cancellation",
+        "contributionID" : "properties.pinned-summary",
+        "operation" : "surface.render",
+        "request" : {
+
+        }
+      }
+    },
+    {
+      "correlationID" : "properties-cancelled",
+      "kind" : "extension.response",
+      "sequence" : 8,
+      "value" : {
+        "failureCode" : "cancelled",
+        "outcome" : "failure"
+      }
+    },
+    {
+      "correlationID" : "properties-expired-handle",
+      "kind" : "host.request",
+      "sequence" : 9,
+      "value" : {
+        "category" : "expired-handle",
+        "contributionID" : "properties.pinned-summary",
+        "operation" : "surface.render",
+        "request" : {
+          "windowHandle" : "expired-window"
+        }
+      }
+    },
+    {
+      "correlationID" : "properties-expired-handle",
+      "kind" : "extension.response",
+      "sequence" : 10,
+      "value" : {
+        "failureCode" : "invalid-handle",
+        "outcome" : "failure"
+      }
+    },
+    {
+      "correlationID" : "properties-invalid-output",
+      "kind" : "host.request",
+      "sequence" : 11,
+      "value" : {
+        "category" : "invalid-output",
+        "contributionID" : "properties.pinned-summary",
+        "operation" : "surface.render",
+        "request" : {
+          "route" : "../../private"
+        }
+      }
+    },
+    {
+      "correlationID" : "properties-invalid-output",
+      "kind" : "extension.response",
+      "sequence" : 12,
+      "value" : {
+        "failureCode" : "invalid-request",
+        "outcome" : "failure"
+      }
+    },
+    {
+      "kind" : "lifecycle",
+      "sequence" : 13,
+      "value" : "baseline-recorded"
+    }
+  ],
+  "extensionID" : "com.markdownql.properties",
+  "extensionVersion" : "1.0.1",
+  "schemaVersion" : 1
+}

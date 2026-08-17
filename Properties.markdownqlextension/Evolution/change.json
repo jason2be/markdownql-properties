@@ -1,0 +1,28 @@
+{
+  "baseContentDigest" : "5cbd531ad3b24a6de78d5a080643c79791d9ab4e235ade90af9ec7a1d498f257",
+  "candidateContentDigest" : "758d6182918cd8ca974e1c34e775fe80eec09dbd87dfa3fe1f0a868dcb7a155e",
+  "capabilityChanges" : [
+
+  ],
+  "changeLevel" : "patch",
+  "changedPaths" : [
+    "CHANGELOG.md",
+    "Evolution/change.json",
+    "Evolution/replay.json",
+    "manifest.json"
+  ],
+  "extensionID" : "com.markdownql.properties",
+  "fromVersion" : "1.0.0",
+  "grantChanges" : [
+
+  ],
+  "provenance" : {
+    "actor" : "ai",
+    "generator" : "markdownql-extension-evolution/1",
+    "sourceRevision" : "5f782ccdb58c70afd7e9d71c191e530a0e8e401e"
+  },
+  "replayDigest" : "d22bd8957f973e940e5b281d60507e356b9a1ab3d67f3e857ed0e6bda8e29c1e",
+  "schemaVersion" : 1,
+  "summary" : "Add the first host-governed evolution baseline.",
+  "toVersion" : "1.0.1"
+}

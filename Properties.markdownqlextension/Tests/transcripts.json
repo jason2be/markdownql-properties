@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "extensionID": "com.markdownql.properties",
+  "scenarios": [
+    {
+      "id": "properties-positive",
+      "category": "positive",
+      "operation": "surface.render",
+      "contributionID": "properties.pinned-summary",
+      "requiredGrant": "surface.register",
+      "request": {
+        "route": "default",
+        "windowHandle": "window-1"
+      },
+      "expected": {
+        "outcome": "success",
+        "value": {
+          "type": "page"
+        }
+      }
+    },
+    {
+      "id": "properties-permission-denied",
+      "category": "permission-denied",
+      "operation": "surface.render",
+      "contributionID": "properties.pinned-summary",
+      "requiredGrant": "surface.register",
+      "request": {},
+      "expected": {
+        "outcome": "failure",
+        "failureCode": "permission-denied"
+      }
+    },
+    {
+      "id": "properties-timeout",
+      "category": "timeout",
+      "operation": "surface.render",
+      "contributionID": "properties.pinned-summary",
+      "request": {
+        "fixture": "suspend"
+      },
+      "expected": {
+        "outcome": "failure",
+        "failureCode": "timed-out"
+      }
+    },
+    {
+      "id": "properties-cancelled",
+      "category": "cancellation",
+      "operation": "surface.render",
+      "contributionID": "properties.pinned-summary",
+      "request": {},
+      "expected": {
+        "outcome": "failure",
+        "failureCode": "cancelled"
+      }
+    },
+    {
+      "id": "properties-expired-handle",
+      "category": "expired-handle",
+      "operation": "surface.render",
+      "contributionID": "properties.pinned-summary",
+      "request": {
+        "windowHandle": "expired-window"
+      },
+      "expected": {
+        "outcome": "failure",
+        "failureCode": "invalid-handle"
+      }
+    },
+    {
+      "id": "properties-invalid-output",
+      "category": "invalid-output",
+      "operation": "surface.render",
+      "contributionID": "properties.pinned-summary",
+      "request": {
+        "route": "../../private"
+      },
+      "expected": {
+        "outcome": "failure",
+        "failureCode": "invalid-request"
+      }
+    }
+  ]
+}
