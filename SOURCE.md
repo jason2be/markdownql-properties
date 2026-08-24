@@ -1,6 +1,6 @@
 # Source provenance
 
 - Source repository: `https://github.com/jason2be/MarkdownQL`
-- Source commit: `b7bdca23ac889f59dfd76866a2906b31f55b84b3`
+- Source commit: `e6de96ffa960e16a47695e086f1c6a791853b540`
 - Source path: `Resources/FirstPartyExtensions/Properties.markdownqlextension`
-- Initial independent release: `v1.0.1`
+- Exported release: `v1.1.1`

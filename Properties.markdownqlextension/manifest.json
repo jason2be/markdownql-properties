@@ -18,7 +18,8 @@
           "scope" : "document",
           "slot" : "document.pinned-summary.section",
           "systemImage" : "list.bullet.rectangle",
-          "title" : "Properties"
+          "title" : "Properties",
+          "titleLocalizationKey" : "pinned_summary.properties"
         },
         "id" : "properties.pinned-summary",
         "kind" : "surface",
@@ -37,7 +38,8 @@
           "scope" : "workspace",
           "slot" : "workspace.home.section",
           "systemImage" : "tablecells",
-          "title" : "Properties"
+          "title" : "Properties",
+          "titleLocalizationKey" : "properties.collection.title"
         },
         "id" : "properties.workspace-home",
         "kind" : "surface",
@@ -58,7 +60,8 @@
           "scope" : "workspace",
           "slot" : "workspace.main.surface",
           "systemImage" : "tablecells",
-          "title" : "Property Collection"
+          "title" : "Property Collection",
+          "titleLocalizationKey" : "properties.collection.title"
         },
         "id" : "properties.collection",
         "kind" : "surface",
@@ -90,7 +93,7 @@
     ],
     "runtime" : "javascript",
     "runtimeActivationPolicy" : "first-visible",
-    "version" : "1.0.1"
+    "version" : "1.1.1"
   },
   "modulePaths" : [
     "Sources/main.js"

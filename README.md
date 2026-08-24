@@ -4,8 +4,8 @@
 
 ## Release
 
-- Extension version: `1.0.1`
-- Release tag: `v1.0.1`
+- Extension version: `1.1.1`
+- Release tag: `v1.1.1`
 - License: MIT
 - Runtime package: `Properties.markdownqlextension`
 
@@ -22,7 +22,7 @@ The package declares every executable module and resource in `manifest.json`. `E
 
 ## Source provenance
 
-This repository was extracted from `jason2be/MarkdownQL` at commit `b7bdca23ac889f59dfd76866a2906b31f55b84b3`. Future releases are versioned independently through this repository.
+This repository was extracted from `jason2be/MarkdownQL` at commit `e6de96ffa960e16a47695e086f1c6a791853b540`. Future releases are versioned independently through this repository.
 
 ## License
 
